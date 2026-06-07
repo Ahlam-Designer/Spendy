@@ -151,11 +151,19 @@ body {
   font-size: 0.9375rem;
   font-weight: 600;
   font-family: var(--font);
-  border: none;
+  border: 1px solid transparent;
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background 0.2s, transform 0.15s, opacity 0.2s;
   white-space: nowrap;
+}
+
+.form-group-btn {
+  flex: 0 1 auto;
+}
+
+.form-group-btn .btn {
+  width: 100%;
 }
 
 .btn:active {
@@ -344,7 +352,7 @@ body {
 
 /* ── Responsive ── */
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   body {
     padding: 24px 16px 56px;
   }
@@ -355,6 +363,23 @@ body {
 
   .card {
     padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-input {
+    font-size: 1rem;
+  }
+
+  .form-group-btn .form-label {
+    display: none;
+  }
+
+  .btn-primary {
+    padding: 12px;
   }
 
   .summary-amount {
@@ -382,25 +407,6 @@ body {
   .card {
     padding: 18px;
     border-radius: var(--radius-sm);
-  }
-
-  .form-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .form-input {
-    padding: 10px 12px;
-    font-size: 1rem;
-  }
-
-  .btn-primary {
-    width: 100%;
-    padding: 12px;
-  }
-
-  .summary-amount {
-    font-size: 1.5rem;
   }
 
   .expense-item {
