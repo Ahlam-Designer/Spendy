@@ -344,18 +344,54 @@ body {
 
 /* ── Responsive ── */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   body {
-    padding: 20px 12px 48px;
+    padding: 24px 16px 56px;
+  }
+
+  .app-title {
+    font-size: 1.75rem;
   }
 
   .card {
     padding: 20px;
   }
 
+  .summary-amount {
+    font-size: 1.5rem;
+  }
+
+  .expense-item {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px 48px;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+  }
+
+  .app-subtitle {
+    font-size: 0.8125rem;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: var(--radius-sm);
+  }
+
   .form-row {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .form-input {
+    padding: 10px 12px;
+    font-size: 1rem;
   }
 
   .btn-primary {
@@ -369,5 +405,67 @@ body {
 
   .expense-item {
     padding: 10px 12px;
+  }
+
+  .expense-amount {
+    font-size: 0.875rem;
+  }
+
+  .expense-right {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    padding: 16px 10px 40px;
+  }
+
+  .app-title {
+    font-size: 1.25rem;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .form-input {
+    padding: 8px 10px;
+    font-size: 0.9375rem;
+  }
+
+  .btn-primary {
+    padding: 10px;
+    font-size: 0.875rem;
+  }
+
+  .summary-amount {
+    font-size: 1.25rem;
+  }
+
+  .expense-item {
+    padding: 8px 10px;
+  }
+
+  .expense-name {
+    font-size: 0.875rem;
+  }
+
+  .expense-amount {
+    font-size: 0.8125rem;
+  }
+
+  .expense-date {
+    font-size: 0.625rem;
+  }
+
+  .btn-delete {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+
+  .expense-right {
+    gap: 6px;
   }
 }
